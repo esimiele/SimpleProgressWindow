@@ -26,3 +26,5 @@ public override bool Run()
 - Call the execute function of this class (contained in SimpleMTBase)
 - Add function calls inside the overridden Run function in the newly created class
 - Use UpdateUILabel and ProvideUIUpdate to update the progress window
+
+![Alt text](/Documentation/SimpleProgressWindowDemoGIF.gif?raw=true)
