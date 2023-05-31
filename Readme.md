@@ -1,5 +1,11 @@
 # Simple code that can be used to asynchronously report the progress of operations
 
+## 5/31/23 
+- Code is available now on nuget.
+- search simpleprogresswindow
+- author: esimiele
+- Follow 'To Use' steps below to use the code
+
 ## To install for use:
 - download the code
 - Open your project/solution in visual studio

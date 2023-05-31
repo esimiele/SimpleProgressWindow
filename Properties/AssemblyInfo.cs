@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SimpleProgressWindow")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("This package helps asynchronously report the progress of operations in a linux-style reporting window")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("esimiele")]
 [assembly: AssemblyProduct("SimpleProgressWindow")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
