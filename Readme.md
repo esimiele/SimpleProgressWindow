@@ -1,23 +1,12 @@
 # Simple code that can be used to asynchronously report the progress of operations
 
-## 5/31/23 
-- Code is available now on nuget.
-- search simpleprogresswindow
-- author: esimiele
-- Follow 'To Use' steps below to use the code
+## v1.1 updates:
+- Option to set the window to close once operations are finished (SetCloseOnFinish method)
+    - first argument is bool option to close window, second is timeout before close in msec
+    - call this method in the constructor of the new class (default is set to leave window up until user closes window)
+- Updated UI to report the time elapsed since start of running
+- Added protected method to grab the elapsed time in the class derived from simplemtbase
 
-## To install for use:
-- download the code
-- Open your project/solution in visual studio
-- In the solution explorer, right click on the solution
-- Add existing project
-- Select SimpleProgressWindow project you just downloaded
-- Right click on your PROJECT
-- Select build dependencies -> project dependencies
-- Check the box next to Simple progress window
-- Right click on references in YOUR project
-- Add references
-- Under projects, select SimpleProgressWindow
 
 ## To use:
 - In your code, create a new class
