@@ -12,7 +12,7 @@ namespace SimpleProgressWindow
         private Dispatcher _dispatch;
         private SimpleMTProgress _pw;
         private StringBuilder _logOutput;
-        private bool _closeOnFinish = false;
+        private bool _closeOnSuccessfulFinish = false;
         //timeout in msec before closing window
         private int _closeTimeOut = 0;
 
@@ -31,7 +31,7 @@ namespace SimpleProgressWindow
                 //pass the progress window the newly created thread and this instance of the optimizationLoop class.
                 SimpleMTProgress pw = new SimpleMTProgress();
                 pw.SetCallerClass(slave, this);
-                pw.SetCloseOnFinish(_closeOnFinish, _closeTimeOut);
+                pw.SetCloseOnFinish(_closeOnSuccessfulFinish, _closeTimeOut);
                 pw.ShowDialog();
 
                 //tell the code to hold until the progress window closes.
@@ -70,7 +70,7 @@ namespace SimpleProgressWindow
         {
             if (closeOnFinish)
             {
-                _closeOnFinish = true;
+                _closeOnSuccessfulFinish = true;
                 _closeTimeOut = timeout;
             }
         }

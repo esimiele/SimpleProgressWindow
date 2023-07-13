@@ -1,5 +1,10 @@
 # Simple code that can be used to asynchronously report the progress of operations
 
+## v1.2 updates:
+- fixed issue with auto close of progress window when operations are completed (it would close whether operations finished successfully or failed)
+- now only closes automatically if operations were successful
+- default closeout time set to 3 seconds
+
 ## v1.1 updates:
 - Option to set the window to close once operations are finished (SetCloseOnFinish method)
     - first argument is bool option to close window, second is timeout before close in msec

@@ -16,8 +16,8 @@ namespace SimpleProgressWindow
         //get instances of the stopwatch and dispatch timer to report how long the calculation takes at each reporting interval
         private Stopwatch sw = new Stopwatch();
         private DispatcherTimer dt = new DispatcherTimer(DispatcherPriority.Normal);
-        private bool _closeOnFinish = false;
-        private int _closeTimeOut = 0;
+        private bool _closeOnSuccessfulFinish = false;
+        private int _closeTimeOut = 3000;
 
         public SimpleMTProgress()
         {
@@ -61,7 +61,7 @@ namespace SimpleProgressWindow
                 //stop the stopwatch
                 sw.Stop();
                 dt.Stop();
-                if (_closeOnFinish) HandleCloseOnFinish(dispatch);
+                if (_closeOnSuccessfulFinish && !slave.isError) HandleCloseOnFinish(dispatch);
             });
         }
 
@@ -90,7 +90,7 @@ namespace SimpleProgressWindow
 
         public void SetCloseOnFinish(bool closeOnFinish, int timeout)
         {
-            _closeOnFinish = closeOnFinish;
+            _closeOnSuccessfulFinish = closeOnFinish;
             _closeTimeOut = timeout;
         }
 
