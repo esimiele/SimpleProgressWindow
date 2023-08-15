@@ -1,5 +1,11 @@
 # Simple code that can be used to asynchronously report the progress of operations
 
+- Code is available on nuget.
+- search simpleprogresswindow
+- author: esimiele
+- Follow 'To Use' steps below to use the code
+- Code is supplied here so others can see how I achieved this solution
+
 ## v1.2 updates:
 - fixed issue with auto close of progress window when operations are completed (it would close whether operations finished successfully or failed)
 - now only closes automatically if operations were successful
